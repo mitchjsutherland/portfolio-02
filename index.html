@@ -18,7 +18,7 @@
         <li><a href="#work">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <img id="logo" src="./images/Logo Line Light.png" alt="Mitch Web Developer Logo">
+      <a href="#top"><img id="logo" src="./images/Logo Line Light.png" alt="Mitch Web Developer Logo"></a>
     </nav>
   </header>
 
@@ -42,32 +42,47 @@
     <section class="page-section" id="work">
       <h2>Portfolio</h2>
       <div id="portfolio-container">
-        <figure id="HMA">
-          <img id="HMA-image" src="./images/screenshot.png" href="https://mitchjsutherland.github.io/code-refactor-01/" alt="Screenshot of a code refactor project by Mitch">
+        <figure class="portfolio-project" id="HMA">
+          <a href="https://mitchjsutherland.github.io/code-refactor-01/"><img id="HMA-image" src="./images/screenshot.png" alt="Screenshot of a code refactor project by Mitch"></a>
           <h3>Code Refactoring for Horiseon Marketing Agency</h3>
         </figure>
-        <figure id="project2">
+
+        <figure class="portfolio-project" id="project2">
           <img class="comingsoon-image" src="./images/coming-soon-7154976_640.webp" alt="A sticky note that says 'coming soon'">
           <h3>Project 2</h3>
         </figure>
-        <figure id="project3">
+
+        <figure class="portfolio-project" id="project3">
           <img class="comingsoon-image" src="./images/coming-soon-7154976_640.webp" alt="A sticky note that says 'coming soon'">
           <h3>Project 3</h3>
         </figure>
-        <figure id="project4">
+
+        <figure class="portfolio-project" id="project4">
           <img class="comingsoon-image" src="./images/coming-soon-7154976_640.webp" alt="A sticky note that says 'coming soon'">
           <h3>Project 4</h3>
         </figure>
+
       </div>
     </section>
 
     <!-- contact -->
     <section class="page-section" id="contact">
       <h2>Contact Me</h2>
-      <button>Email</button>
-      <button>WhatsApp</button>
-      <button>Instagram</button>
-      <button>Github</button>
+      <div id="contactbutton-container">
+        <!-- <div class="contactbutton-wrap"> -->
+          <button>Email</button>
+        <!-- </div> -->
+        <!-- <div class="contactbutton-wrap"> -->
+          <button>WhatsApp</button>
+        <!-- </div> -->
+        <!-- <div class="contactbutton-wrap"> -->
+          <button>Instagram</button>
+        <!-- </div> -->
+        <!-- <div class="contactbutton-wrap"> -->
+          <a href="https://github.com/mitchjsutherland"><button>Github</button></a>
+        <!-- </div> -->
+      </div>
+
     </section>
   </main>
 

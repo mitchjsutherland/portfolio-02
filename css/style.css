@@ -24,7 +24,7 @@ p {
 
 /* All CSS above this line was already listed within the project file. All CSS below this line has since been added. */
 
-/* Navigation bar */
+/* Navigation bar -------------------------------------------------------------- */
 
 nav {
   position: fixed;
@@ -54,7 +54,7 @@ nav a {
   bottom: 15px;
 }
 
-/* Hero section */
+/* Hero section -------------------------------------------------------------- */
 
 .hero-banner {
   width: 100%;
@@ -89,14 +89,14 @@ nav a {
 }
 
 
-/* Main page section */
+/* Main page section -------------------------------------------------------------- */
 
 main {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .page-section {
-  padding: 20px 0px;
+  padding: 50px 0px;
 }
 
 .page-section h2 {
@@ -110,7 +110,7 @@ main {
   text-align: center;
 }
 
-/* Portfolio section */
+/* Portfolio section -------------------------------------------------------------- */
 
 #HMA {
   grid-area: HMA;
@@ -134,11 +134,22 @@ main {
   align-items: center;
   justify-content: center;
   width: 90%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "HMA HMA HMA" 
   "project2 project3 project4";
 }
+
+.portfolio-project {
+  text-align: center;
+}
+
+
+/*  
+.portfolio-project h3 {
+  background-color: blue;
+}
+*/
 
 #HMA-image {
   width: 90%;
@@ -147,3 +158,37 @@ main {
 .comingsoon-image {
   width: 90%;
 }
+
+figure img:hover {
+  opacity: 90%;
+}
+
+
+/* Contact section -------------------------------------------------------------- */
+
+#contactbutton-container {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  height: 300px;
+  width: 300px;
+  background-color: ;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*  
+button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: indigo
+}
+
+*/
