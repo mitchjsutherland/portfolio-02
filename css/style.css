@@ -31,7 +31,6 @@ nav {
   background-color: indigo;
   height: 60px;
   width: 100%;
-
 }
 
 nav ul {
@@ -64,18 +63,21 @@ nav a {
 
 #name-container {
   text-align: center;
+}
 
+#name-container h3 {
+  color: indigo;
 }
 
 #profile-pic {
   width: 500px;
   margin: 0 auto;
   border-radius: 50%;
-  transition: all 0.5s ease-in-out;
 }
 
 #profile-pic:hover {
   box-shadow: 0px 0px 10px 1px indigo;
+  transition: all 0.5s ease-in-out;
 }
 
 
@@ -104,10 +106,20 @@ main {
   text-align: center;
 }
 
+#whoismitch h2 {
+  padding-bottom: 40px
+  }
+
 #whoismitch p {
   width: 70%;
   margin: 0 auto;
   text-align: center;
+}
+
+#whoismitch:hover {
+  background-color: indigo;
+  color: white;
+  transition: all 2.0s ease;
 }
 
 /* Portfolio section -------------------------------------------------------------- */
@@ -144,25 +156,26 @@ main {
   text-align: center;
 }
 
-
-/*  
-.portfolio-project h3 {
-  background-color: blue;
-}
-*/
-
-#HMA-image {
-  width: 90%;
-}
-
+#HMA-image,
 .comingsoon-image {
   width: 90%;
+  margin-bottom: 25px;
 }
 
 figure img:hover {
   opacity: 90%;
 }
 
+#HMA img:hover {
+  box-shadow: 0px 0px 10px 1px indigo;
+  transition: all 0.5s ease-in-out;
+}
+
+.portfolio-project h3:hover {
+  font-size: 180%;
+  color: aquamarine;
+  transition: all 0.5s ease;
+}
 
 /* Contact section -------------------------------------------------------------- */
 
@@ -174,21 +187,71 @@ figure img:hover {
   justify-content: space-around;
 }
 
+#contact:hover {
+  background-color: indigo;
+  color: white;
+  transition: all 2.0s ease;
+}
+
 button {
-  height: 300px;
-  width: 300px;
-  background-color: ;
-  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
   margin-bottom: 30px;
   text-align: center;
+  font-size: 1em;
 }
 
-/*  
-button {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  color: indigo
+button:hover {
+  box-shadow: 0px 0px 10px 1px whitesmoke;
+  transition: all 0.5s ease-in-out;
 }
 
-*/
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%
+  }
+
+  #links {
+    padding: 0;
+  }
+
+  #profile-pic {
+    width: 250px;
+  }
+
+  .hero-banner h2 {
+    font-size: 3rem;
+  }
+  
+  .hero-banner h3 {
+    font-size: 1.5rem;
+  }
+  
+  #logo {
+    display: 
+  }
+
+  nav li {
+    padding: 0px 5px;
+    font-size: 70%;
+  }
+
+  #portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-project h3:hover {
+    font-size: 100%;
+    color: aquamarine;
+    transition: all 0.5s ease;
+  }
+
+  button {
+    height: 120px;
+    width: 120px;
+  }
+}
