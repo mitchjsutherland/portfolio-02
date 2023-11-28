@@ -21,3 +21,31 @@ h6 {
 p {
   margin: 0;
 }
+
+nav {
+  position: fixed;
+  background-color: indigo;
+  height: 60px;
+  width: 100%;
+
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  position: relative;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav a {
+  color: whitesmoke;
+}
+
+#logo {
+  width: 95px;
+  position: relative;
+  bottom: 15px;
+}
